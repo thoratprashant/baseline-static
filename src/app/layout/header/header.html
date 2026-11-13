@@ -1,0 +1,47 @@
+<a class="skip-link" href="#main" (click)="skipToMain($event)">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="d-flex align-items-center justify-content-between gap-3" aria-label="Primary">
+      <a routerLink="/" class="d-inline-flex align-items-center" aria-label="Baseline Health home">
+        <img src="assets/img/logo.png" alt="Baseline Health" class="brand-logo" width="600" height="240">
+      </a>
+      <ul class="nav main-nav d-none d-lg-flex">
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/how-it-works">How it works</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/what-we-treat">What we treat</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/medications">Medications</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/faqs">FAQs</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <a href="#" (click)="$event.preventDefault()" class="btn btn-ghost btn-sm d-none d-sm-inline-flex">Log in</a>
+        <a routerLink="/how-it-works" class="btn btn-amber btn-sm d-none d-md-inline-flex">Get started</a>
+        <button class="nav-toggle d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+</header>
+
+<div class="offcanvas offcanvas-end mobile-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header px-4 pt-4">
+    <img src="assets/img/logo.png" alt="Baseline Health" height="36" width="90" style="height:36px;width:auto" id="mobileMenuLabel">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+  </div>
+  <div class="offcanvas-body px-4 d-flex flex-column">
+    <nav class="nav flex-column" aria-label="Mobile">
+      <a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">Home</a>
+      <a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/how-it-works">How it works</a>
+      <a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/what-we-treat">What we treat</a>
+      <a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/medications">Medications</a>
+      <a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/about">About us</a>
+      <a class="nav-link" routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/faqs">FAQs</a>
+    </nav>
+    <div class="mt-auto pt-4 d-grid gap-2">
+      <a routerLink="/how-it-works" class="btn btn-amber btn-lg">Get started</a>
+      <a href="#" (click)="$event.preventDefault()" class="btn btn-ghost btn-lg">Member log in</a>
+    </div>
+  </div>
+</div>

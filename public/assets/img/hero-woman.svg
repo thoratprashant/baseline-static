@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a smiling woman in her thirties, calm and content</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE3AE"/>
+      <stop offset=".6" stop-color="#FDEFD6"/>
+      <stop offset="1" stop-color="#F7F1E8"/>
+    </linearGradient>
+    <linearGradient id="sweater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A4F8A"/>
+      <stop offset="1" stop-color="#123E70"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4A2C1D"/>
+      <stop offset="1" stop-color="#2E1A11"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="500" height="560" fill="url(#sky)"/>
+
+  <!-- sun + rays -->
+  <g transform="translate(250 330)">
+    <circle r="205" fill="#F59F0A" opacity=".16"/>
+    <circle r="150" fill="#F59F0A" opacity=".18"/>
+    <g stroke="#F59F0A" stroke-width="10" stroke-linecap="round" opacity=".55">
+      <line x1="0" y1="-250" x2="0" y2="-222"/>
+      <line x1="-150" y1="-200" x2="-134" y2="-178"/>
+      <line x1="150" y1="-200" x2="134" y2="-178"/>
+      <line x1="-232" y1="-92" x2="-206" y2="-82"/>
+      <line x1="232" y1="-92" x2="206" y2="-82"/>
+    </g>
+  </g>
+
+
+  <!-- hair (back) -->
+  <path d="M156 214 C150 120 210 92 262 96 C330 100 362 150 356 222 C352 270 366 318 378 352 C386 376 360 392 330 388 L170 388 C138 390 118 372 128 346 C142 310 160 272 156 214 Z" fill="url(#hair)"/>
+
+  <!-- body / sweater -->
+  <path d="M70 560 C70 470 120 418 196 404 L304 404 C380 418 430 470 430 560 Z" fill="url(#sweater)"/>
+  <!-- neck -->
+  <path d="M218 318 L282 318 L286 404 C270 424 230 424 214 404 Z" fill="#C88A63"/>
+  <path d="M218 330 C240 352 262 352 284 334 L284 356 C262 372 238 370 216 354 Z" fill="#B37450" opacity=".7"/>
+  <!-- collar -->
+  <path d="M196 404 C214 438 286 438 304 404 L292 400 C276 426 224 426 208 400 Z" fill="#F5F7F8"/>
+  <!-- necklace -->
+  <path d="M216 410 C232 432 268 432 284 410" fill="none" stroke="#F59F0A" stroke-width="3"/>
+  <circle cx="250" cy="430" r="6" fill="#F59F0A"/>
+  <!-- sweater rib -->
+  <path d="M120 520 C150 506 168 506 178 530" fill="none" stroke="#0B2A4D" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+  <path d="M380 520 C350 506 332 506 322 530" fill="none" stroke="#0B2A4D" stroke-width="4" stroke-linecap="round" opacity=".5"/>
+
+  <!-- ears + earrings -->
+  <ellipse cx="174" cy="244" rx="15" ry="22" fill="#D29873"/>
+  <ellipse cx="326" cy="244" rx="15" ry="22" fill="#D29873"/>
+  <circle cx="172" cy="276" r="8" fill="#F59F0A"/>
+  <circle cx="328" cy="276" r="8" fill="#F59F0A"/>
+
+  <!-- face -->
+  <path d="M250 136 C304 136 330 178 330 232 C330 296 294 342 250 342 C206 342 170 296 170 232 C170 178 196 136 250 136 Z" fill="#DCA27D"/>
+  <!-- cheeks -->
+  <ellipse cx="204" cy="268" rx="20" ry="12" fill="#EE8A72" opacity=".38"/>
+  <ellipse cx="296" cy="268" rx="20" ry="12" fill="#EE8A72" opacity=".38"/>
+
+  <!-- brows -->
+  <path d="M198 208 C210 198 226 198 236 204" fill="none" stroke="#3A2216" stroke-width="6" stroke-linecap="round"/>
+  <path d="M264 204 C274 198 290 198 302 208" fill="none" stroke="#3A2216" stroke-width="6" stroke-linecap="round"/>
+  <!-- smiling eyes -->
+  <path d="M202 238 C210 226 228 226 236 238" fill="none" stroke="#2B1A12" stroke-width="6" stroke-linecap="round"/>
+  <path d="M264 238 C272 226 290 226 298 238" fill="none" stroke="#2B1A12" stroke-width="6" stroke-linecap="round"/>
+    <!-- nose -->
+  <path d="M252 248 C248 264 244 272 254 274" fill="none" stroke="#B87856" stroke-width="5" stroke-linecap="round"/>
+  <!-- smile -->
+  <path d="M216 290 C232 322 268 322 284 290 C262 298 238 298 216 290 Z" fill="#8E2F2A"/>
+  <path d="M222 292 C240 298 260 298 278 292 L276 300 C258 305 242 305 224 300 Z" fill="#fff"/>
+  <path d="M232 309 C244 318 256 318 268 309 C258 312 242 312 232 309 Z" fill="#E0726B"/>
+
+  <!-- hair (front, side-swept) -->
+  <path d="M170 238 C160 160 204 112 262 114 C320 116 346 162 334 224 C328 198 314 178 296 166 C268 190 222 200 184 214 C176 222 172 230 170 238 Z" fill="url(#hair)"/>
+  <path d="M296 166 C314 178 328 198 334 224 C340 196 334 170 320 152 C312 156 304 160 296 166 Z" fill="#5A3624" opacity=".6"/>
+  <path d="M206 150 C232 132 270 128 300 142" fill="none" stroke="#7A4C33" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  <path d="M196 196 C226 186 256 176 284 162" fill="none" stroke="#5A3624" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+</svg>

@@ -1,0 +1,249 @@
+<section class="hero-home">
+  <div class="container">
+    <div class="hero-top">
+      <div class="hero-words">
+        <h1 class="hero-title"><span>Rapid,</span> <span>Reliable,</span> <span>Refills</span></h1>
+        <p class="hero-sub">for your mental health meds</p>
+      </div>
+      <figure class="hero-visual">
+        <div class="portrait">
+          <img src="assets/img/hero-woman.svg" alt="Illustration of a smiling woman in her thirties" width="500" height="560">
+        </div>
+        <figcaption class="speech">&ldquo;I&rsquo;m at my baseline.&rdquo;</figcaption>
+      </figure>
+    </div>
+  </div>
+  <svg class="pulse" data-pulse aria-hidden="true" preserveAspectRatio="none"><path d=""/></svg>
+  <div class="container">
+    <div class="hero-bottom">
+      <div>
+        <p class="stay">Stay stable.</p>
+        <div class="hero-actions">
+          <a [routerLink]="[]" fragment="check" class="btn btn-amber btn-lg">Check if you qualify</a>
+          <a routerLink="/medications" class="btn btn-ghost btn-lg">See the medications</a>
+        </div>
+      </div>
+      <p class="lead-bh hero-lead">If your medication hasn&rsquo;t changed in 3 months or more, you can request your refills online. A prescriber reviews your request and sends it to your pharmacy, with no appointment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-white">
+  <div class="container">
+    <nav class="index-list" aria-label="Quick links">
+      <a class="index-row" routerLink="/medications">
+        <span class="index-title">Medications</span>
+        <span class="index-desc">17 generics, searchable by generic or brand name</span>
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </a>
+      <a class="index-row" routerLink="/faqs">
+        <span class="index-title">FAQs</span>
+        <span class="index-desc">Cost, privacy, eligibility and what happens if your needs change</span>
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </a>
+      <a class="index-row" routerLink="/how-it-works">
+        <span class="index-title">How it works</span>
+        <span class="index-desc">Six steps from assessment to pharmacy</span>
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </a>
+      <a class="index-row" routerLink="/what-we-treat">
+        <span class="index-title">What we treat</span>
+        <span class="index-desc">12 conditions, from depression to insomnia</span>
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+      </a>
+    </nav>
+  </div>
+</section>
+
+<section class="band band-navy" id="check">
+  <div class="container">
+    <div class="band-head">
+      <h2>Is Baseline Health right for you?</h2>
+      <p>Three quick questions. Nothing you answer here is saved.</p>
+    </div>
+    <div class="checker" data-checker>
+      <div class="checker-meta">
+        <span data-checker-count>Question 1 of 3</span>
+        <span class="checker-track"><span data-checker-bar></span></span>
+      </div>
+
+      <div data-q="state">
+        <h3>Where do you live?</h3>
+        <div class="choices">
+          <button type="button" class="choice" data-a="yes">Iowa</button>
+          <button type="button" class="choice" data-a="yes">New York</button>
+          <button type="button" class="choice" data-a="yes">South Carolina</button>
+          <button type="button" class="choice" data-a="yes">Texas</button>
+          <button type="button" class="choice quiet" data-a="no">Another state</button>
+        </div>
+      </div>
+
+      <div data-q="med" hidden>
+        <h3>Which medication do you take?</h3>
+        <div class="choices align-items-center">
+          <label for="checkMed" class="visually-hidden">Your medication</label>
+          <select id="checkMed" class="form-select">
+            <option value="">Choose your medication</option>
+            <option>Atomoxetine (Strattera)</option>
+            <option>Bupropion (Wellbutrin)</option>
+            <option>Buspirone (Buspar)</option>
+            <option>Citalopram (Celexa)</option>
+            <option>Desvenlafaxine (Pristiq)</option>
+            <option>Duloxetine (Cymbalta)</option>
+            <option>Escitalopram (Lexapro)</option>
+            <option>Fluoxetine (Prozac)</option>
+            <option>Fluvoxamine (Luvox)</option>
+            <option>Hydroxyzine (Atarax, Vistaril)</option>
+            <option>Mirtazapine (Remeron)</option>
+            <option>Paroxetine (Paxil)</option>
+            <option>Sertraline (Zoloft)</option>
+            <option>Trazodone (Desyrel)</option>
+            <option>Venlafaxine (Effexor)</option>
+            <option>Vilazodone (Viibryd)</option>
+            <option>Vortioxetine (Trintellix)</option>
+            <option value="none">Mine isn&rsquo;t listed</option>
+          </select>
+          <button type="button" class="btn btn-amber btn-lg" data-a="select">Continue</button>
+        </div>
+      </div>
+
+      <div data-q="stable" hidden>
+        <h3>Has your dose, frequency or formulary changed in the last 3 months?</h3>
+        <div class="choices">
+          <button type="button" class="choice" data-a="yes">No, nothing has changed</button>
+          <button type="button" class="choice quiet" data-a="no">Yes, something changed</button>
+        </div>
+      </div>
+
+      <div data-result="fit" hidden>
+        <span class="result-mark"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+        <h3>You look like a good fit.</h3>
+        <p class="lead-bh measure">Next comes the initial assessment, which takes 5 to 15 minutes. Have proof ready that your medication has been unchanged for at least 3 months.</p>
+        <div class="hero-actions mt-4">
+          <a routerLink="/how-it-works" class="btn btn-amber btn-lg">See the 6 steps</a>
+          <button type="button" class="btn-text-light" data-restart>Start over</button>
+        </div>
+      </div>
+      <div data-result="state" hidden>
+        <span class="result-mark wait"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+        <h3>We&rsquo;re not in your state yet.</h3>
+        <p class="lead-bh measure">We currently operate in Iowa, New York, South Carolina and Texas, and we&rsquo;re working on expanding into new states.</p>
+        <div class="hero-actions mt-4">
+          <a routerLink="/faqs" class="btn btn-ghost-light btn-lg">Read the FAQs</a>
+          <button type="button" class="btn-text-light" data-restart>Start over</button>
+        </div>
+      </div>
+      <div data-result="med" hidden>
+        <span class="result-mark wait"><i class="bi bi-capsule" aria-hidden="true"></i></span>
+        <h3>We don&rsquo;t offer that medication yet.</h3>
+        <p class="lead-bh measure">We refill 17 medications today and more may be added. We don&rsquo;t offer controlled substances such as stimulants or benzodiazepines.</p>
+        <div class="hero-actions mt-4">
+          <a routerLink="/medications" class="btn btn-ghost-light btn-lg">See the full list</a>
+          <button type="button" class="btn-text-light" data-restart>Start over</button>
+        </div>
+      </div>
+      <div data-result="stable" hidden>
+        <span class="result-mark wait"><i class="bi bi-clock-history" aria-hidden="true"></i></span>
+        <h3>Come back once you&rsquo;ve been stable for 3 months.</h3>
+        <p class="lead-bh measure">We only refill medications that have been unchanged for at least 3 months. Until then, your current prescriber is the right place for any changes.</p>
+        <div class="hero-actions mt-4">
+          <a routerLink="/how-it-works" class="btn btn-ghost-light btn-lg">How it works</a>
+          <button type="button" class="btn-text-light" data-restart>Start over</button>
+        </div>
+      </div>
+
+      <p class="checker-note">This is a quick guide, not a medical assessment. A prescriber reviews every request, and proof of stability is required.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <p class="statement" data-words>Stable means no changes to your medication, dose, frequency or formulary for at least 3 months.</p>
+    <div class="do-dont">
+      <div>
+        <h3>What we do: medication refills</h3>
+        <p>You keep taking what already works. We renew your current prescription and send it to the pharmacy you choose, through web and text-based contact with a prescriber.</p>
+      </div>
+      <div>
+        <h3>What we don&rsquo;t do yet: medication management</h3>
+        <p>Dose increases, switches and new medications need a prescriber outside Baseline Health. Once you&rsquo;ve been stable again for 3 months, you&rsquo;re welcome back.</p>
+        <a routerLink="/how-it-works" class="inline-link">Read how eligibility works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-white">
+  <div class="container">
+    <div class="band-head">
+      <h2>Three things to do. Then your prescriber takes over.</h2>
+    </div>
+    <ol class="steps-inline">
+      <li>
+        <h3>Complete the assessment</h3>
+        <p>An online questionnaire that covers what an in-person visit would, in about 5 to 15 minutes.</p>
+      </li>
+      <li>
+        <h3>Add your meds and proof</h3>
+        <p>List what you take, choose your pharmacy and upload records, a prescriber letter or a pharmacy printout.</p>
+      </li>
+      <li>
+        <h3>Choose a membership</h3>
+        <p>Pay, submit and allow 3 to 5 business days for your prescriber to review and send your refill.</p>
+      </li>
+    </ol>
+    <p class="mt-5 mb-0"><a routerLink="/how-it-works" class="btn btn-navy btn-lg">See all 6 steps</a></p>
+  </div>
+</section>
+
+<section class="band band-sun">
+  <div class="container">
+    <div class="row gy-5 gx-lg-5 align-items-center">
+      <div class="col-lg-7">
+        <div class="band-head">
+          <h2>Less time in waiting rooms. More money in your pocket.</h2>
+        </div>
+        <ul class="reasons">
+          <li>
+            <h3>It costs less</h3>
+            <p>Without good insurance, routine check-ins can cost hundreds of dollars a visit. We charge a fraction of that, with no travel and no time off work.</p>
+          </li>
+          <li>
+            <h3>It takes minutes</h3>
+            <p>Request a refill from wherever you are, instead of booking an appointment every 3 to 6 months.</p>
+          </li>
+          <li>
+            <h3>It stays private</h3>
+            <p>Get your medication without involving your employer or your insurer.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        <div class="calc" data-calc>
+          <h3>How much time do refill check-ins take you?</h3>
+          <label for="calcVisits">Check-in visits a year <output data-calc-visits-out>3 visits</output></label>
+          <input id="calcVisits" type="range" class="form-range" min="1" max="6" step="1" value="3" data-calc-visits>
+          <label for="calcHours">Time per visit, with travel <output data-calc-hours-out>2 hours</output></label>
+          <input id="calcHours" type="range" class="form-range" min="0.5" max="4" step="0.5" value="2" data-calc-hours>
+          <div class="calc-total" aria-live="polite"><strong data-calc-total>6</strong><span data-calc-unit>hours a year</span></div>
+          <p>That&rsquo;s the time spent on appointments for refills you already know you need. A Baseline Health refill request takes minutes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <p class="where">Now refilling prescriptions in <em>Iowa</em>, <em>New York</em>, <em>South Carolina</em> and <em>Texas</em>. More states are on the way.</p>
+  </div>
+  <div class="marquee mt-5" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item"><strong>Sertraline</strong> Zoloft</span><span class="marquee-item"><strong>Escitalopram</strong> Lexapro</span><span class="marquee-item"><strong>Bupropion</strong> Wellbutrin</span><span class="marquee-item"><strong>Fluoxetine</strong> Prozac</span><span class="marquee-item"><strong>Buspirone</strong> Buspar</span><span class="marquee-item"><strong>Duloxetine</strong> Cymbalta</span><span class="marquee-item"><strong>Trazodone</strong> Desyrel</span><span class="marquee-item"><strong>Venlafaxine</strong> Effexor</span><span class="marquee-item"><strong>Atomoxetine</strong> Strattera</span>
+      <span class="marquee-item"><strong>Sertraline</strong> Zoloft</span><span class="marquee-item"><strong>Escitalopram</strong> Lexapro</span><span class="marquee-item"><strong>Bupropion</strong> Wellbutrin</span><span class="marquee-item"><strong>Fluoxetine</strong> Prozac</span><span class="marquee-item"><strong>Buspirone</strong> Buspar</span><span class="marquee-item"><strong>Duloxetine</strong> Cymbalta</span><span class="marquee-item"><strong>Trazodone</strong> Desyrel</span><span class="marquee-item"><strong>Venlafaxine</strong> Effexor</span><span class="marquee-item"><strong>Atomoxetine</strong> Strattera</span>
+    </div>
+  </div>
+</section>
+
+<bh-cta />

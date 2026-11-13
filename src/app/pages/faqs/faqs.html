@@ -1,0 +1,161 @@
+<section class="page-hero">
+  <div class="container">
+    <ol class="crumbs"><li><a routerLink="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">FAQs</li></ol>
+    <h1>Questions, answered.</h1>
+    <div class="search-box mt-4">
+      <i class="bi bi-search" aria-hidden="true"></i>
+      <label for="faqSearch" class="visually-hidden">Search FAQs</label>
+      <input id="faqSearch" type="search" placeholder="Search, for example: insurance" autocomplete="off" data-faq-search>
+    </div>
+  </div>
+</section>
+
+<section class="band pt-0">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-3">
+        <nav class="faq-nav" aria-label="FAQ categories">
+          <a [routerLink]="[]" fragment="cost">Cost and time <span>3</span></a>
+          <a [routerLink]="[]" fragment="care">Eligibility and care <span>4</span></a>
+          <a [routerLink]="[]" fragment="meds">Conditions and medications <span>3</span></a>
+          <a [routerLink]="[]" fragment="states">Where we operate <span>1</span></a>
+        </nav>
+      </div>
+      <div class="col-lg-9">
+      <div class="faq-group" id="cost">
+        <h2 class="faq-group-title">Cost and time</h2>
+        <div class="accordion accordion-bh">
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              <span class="flex-grow-1">How does Baseline Health save me money compared to seeing my typical prescriber?</span>
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show">
+            <div class="accordion-body"><p>If you&rsquo;re under-insured or have no insurance, the co-pay for seeing your prescriber regularly can amount to hundreds of dollars per visit, and most psychiatrists want to see you every 3 to 6 months (2 to 4 visits per year), even when nothing about your medication is changing.</p><p>Baseline Health charges a fraction of those co-pay fees and puts the power to decide how often you receive refills in your hands. Factor in the cost of travel (gas, car wear and tear, time off work and personal time) and the savings can be significant.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              <span class="flex-grow-1">Why would I use Baseline Health if I have insurance and low or no co-pays?</span>
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>Beyond the savings above, Baseline Health offers separation from your employer and insurer, a more private way to obtain your medications in an age when companies may collect and sell your data.</p><p>Some people prefer this anonymity because they are community leaders, public figures or healthcare workers and aren&rsquo;t comfortable with the traditional pathway to obtaining their mental health medications.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              <span class="flex-grow-1">How does Baseline Health save me time compared to seeing my typical prescriber?</span>
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>You skip regular in-person appointments with a psychiatrist, family physician, internist or nurse practitioner. Requesting a refill takes minutes, wherever you are, instead of pausing your life to travel to appointments or find a private place for a video visit.</p></div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="faq-group" id="care">
+        <h2 class="faq-group-title">Eligibility and care</h2>
+        <div class="accordion accordion-bh">
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+              <span class="flex-grow-1">Can Baseline Health increase the dose of my medication or switch or add medications?</span>
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>No. At this time Baseline Health only treats stable patients who have been on the same medication(s) for 3+ months without changes.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+              <span class="flex-grow-1">What do I do if I need changes to my medication or want to try a new one?</span>
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>If your medication needs to change (medication management), you&rsquo;ll need to return to a more traditional form of care. You&rsquo;re welcome back once you&rsquo;ve been stable for 3+ months on the new dose or medication, as long as we offer it.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+              <span class="flex-grow-1">Why do I need to be stable on my medication for 3 or more months?</span>
+            </button>
+          </h3>
+          <div id="faq6" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>If you haven&rsquo;t been on the same medication (dose, frequency and formulary) for at least 3 months, you&rsquo;re more likely to need further adjustments to get stable. Because we don&rsquo;t currently offer medication management, waiting at least 3 months is the minimum we recommend, to save you time and money.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+              <span class="flex-grow-1">Why do you only offer refills and not medication management?</span>
+            </button>
+          </h3>
+          <div id="faq7" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>Managing medications requires much more prescriber time, which would raise costs for our members. We hope to add medication management in the future, but today it isn&rsquo;t compatible with our goal of offering refills at a low price.</p></div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="faq-group" id="meds">
+        <h2 class="faq-group-title">Conditions and medications</h2>
+        <div class="accordion accordion-bh">
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+              <span class="flex-grow-1">What mental health issues does Baseline Health treat?</span>
+            </button>
+          </h3>
+          <div id="faq8" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>You can find the full list on our <a class="inline-link" routerLink="/what-we-treat">What we treat</a> page.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+              <span class="flex-grow-1">What medications does Baseline Health offer?</span>
+            </button>
+          </h3>
+          <div id="faq9" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>You can find all 17 on our <a class="inline-link" routerLink="/medications">Medications we offer</a> page.</p></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+              <span class="flex-grow-1">Why don&rsquo;t you offer stimulants like Adderall or benzodiazepines like Xanax?</span>
+            </button>
+          </h3>
+          <div id="faq10" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>These are controlled substances and can cause a number of issues with long-term use, including addiction and worsening mental and physical health. People who prefer these medications should be under the care of an in-person prescriber, which is a higher level of care than Baseline Health provides.</p></div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="faq-group" id="states">
+        <h2 class="faq-group-title">Where we operate</h2>
+        <div class="accordion accordion-bh">
+        <div class="accordion-item">
+          <h3 class="accordion-header m-0">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
+              <span class="flex-grow-1">Which states does Baseline Health serve?</span>
+            </button>
+          </h3>
+          <div id="faq11" class="accordion-collapse collapse">
+            <div class="accordion-body"><p>We&rsquo;re always working on expanding into new states. We currently operate in:</p><div class="state-pills"><span>Iowa</span><span>New York</span><span>South Carolina</span><span>Texas</span></div></div>
+          </div>
+        </div>
+        </div>
+      </div>
+        <p class="empty-state" data-faq-empty hidden>No questions match your search. Try a different word.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<bh-cta />

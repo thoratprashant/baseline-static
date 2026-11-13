@@ -1,0 +1,147 @@
+<section class="page-hero">
+  <div class="container">
+    <ol class="crumbs"><li><a routerLink="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">How it works</li></ol>
+    <h1>Refills without the appointments.</h1>
+    <p class="lead-bh">Baseline Health refills medication for stable patients: people who haven&rsquo;t needed a change to their medication for at least 3 months. Verification is required.</p>
+    <div class="pulse-rule"></div>
+  </div>
+</section>
+
+<section class="band band-white">
+  <div class="container" data-switch>
+    <div class="band-head">
+      <h2>What we can and can&rsquo;t do for you</h2>
+    </div>
+    <div class="segmented" role="group" aria-label="Choose a service to read about">
+      <button type="button" class="active" data-switch-btn="refills" aria-pressed="true">Medication refills</button>
+      <button type="button" data-switch-btn="management" aria-pressed="false">Medication management</button>
+    </div>
+    <div class="switch-panel" data-switch-panel="refills">
+      <h3>Yes, this is what we do.</h3>
+      <ul class="plain-list">
+        <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>You&rsquo;re stable: no changes to your medication dose, frequency or formulary for 3 months or more.</span></li>
+        <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>Your medication is one of the <a class="inline-link" routerLink="/medications">17 we offer</a>.</span></li>
+        <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>You can upload proof of stability.</span></li>
+      </ul>
+    </div>
+    <div class="switch-panel" data-switch-panel="management" hidden>
+      <h3>Not yet. It may come later.</h3>
+      <ul class="plain-list no">
+        <li><i class="bi bi-x-lg" aria-hidden="true"></i><span>Assessing mental health symptoms that are getting worse.</span></li>
+        <li><i class="bi bi-x-lg" aria-hidden="true"></i><span>Increasing or changing your medication.</span></li>
+      </ul>
+      <p class="measure mt-4 mb-0">If you join as a stable patient and later need medication management, you&rsquo;ll need treatment outside Baseline Health. You can return once you&rsquo;ve been stable for 3 months again.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-sun" id="steps">
+  <div class="container">
+    <div class="row gx-lg-5" data-steps>
+      <div class="col-lg-4">
+        <div class="steps-sticky">
+          <h2 class="mb-4 mb-lg-5">Becoming a patient</h2>
+          <div class="d-none d-lg-block" aria-hidden="true">
+            <div class="steps-count"><span class="steps-num" data-step-num>01</span><span class="steps-of">of 06</span></div>
+            <p class="steps-current" data-step-title>Complete the initial assessment</p>
+            <div class="steps-bar"><span data-step-bar></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <ol class="steps">
+          <li class="step is-active" data-title="Complete the initial assessment">
+            <h3>Complete the initial assessment</h3>
+            <span class="time">5 to 15 minutes</span>
+            <p>It covers all the pertinent information an in-person assessment with a psychiatrist or nurse practitioner would, in a much more succinct way. How long it takes depends on how extensive your mental health history is.</p>
+          </li>
+          <li class="step" data-title="Add your medications">
+            <h3>Add your medications</h3>
+            <ul>
+              <li>We offer <a class="inline-link" routerLink="/medications">17 medications</a> to treat a number of <a class="inline-link" routerLink="/what-we-treat">psychiatric diagnoses</a>.</li>
+              <li>If we offer what you need, add each medication to your profile: name, dose, formulary and frequency.</li>
+              <li>Choose your preferred pharmacy.</li>
+            </ul>
+          </li>
+          <li class="step" data-title="Upload your proof of stability">
+            <h3>Upload your proof of stability</h3>
+            <p>Stable means no changes to the medication dose, frequency or formulary for at least 3 months. We accept:</p>
+            <ul class="doc-types">
+              <li><i class="bi bi-file-medical" aria-hidden="true"></i>Recent medical records</li>
+              <li><i class="bi bi-envelope-paper" aria-hidden="true"></i>A letter on practice letterhead</li>
+              <li><i class="bi bi-receipt" aria-hidden="true"></i>A pharmacy printout or screenshot</li>
+            </ul>
+            <div class="notice">
+              <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+              <p>Documents must be dated within 1 year of your refill request. You must also certify that you haven&rsquo;t been off your medication for more than 1 week, because restarting at a higher dose after a longer gap can cause adverse side effects.</p>
+            </div>
+          </li>
+          <li class="step" data-title="Select a membership">
+            <h3>Select a membership</h3>
+            <p>There are 4 plans. The longer the membership, the more you save.</p>
+            <div data-switch>
+              <div class="segmented" role="group" aria-label="Membership plans">
+                <button type="button" class="active" data-switch-btn="m" aria-pressed="true">Monthly</button>
+                <button type="button" data-switch-btn="q" aria-pressed="false">Quarterly</button>
+                <button type="button" data-switch-btn="s" aria-pressed="false">Semi-annual</button>
+                <button type="button" data-switch-btn="a" aria-pressed="false">Annual</button>
+              </div>
+              <div class="switch-panel plan-panel mt-3" data-switch-panel="m"><p>Renews every month</p><div class="plan-meter"><div class="label"><span>Savings</span><span>Lowest</span></div><div class="track"><span style="width:25%"></span></div></div></div>
+              <div class="switch-panel plan-panel mt-3" data-switch-panel="q" hidden><p>Renews every 3 months</p><div class="plan-meter"><div class="label"><span>Savings</span><span>More</span></div><div class="track"><span style="width:50%"></span></div></div></div>
+              <div class="switch-panel plan-panel mt-3" data-switch-panel="s" hidden><p>Renews every 6 months</p><div class="plan-meter"><div class="label"><span>Savings</span><span>Even more</span></div><div class="track"><span style="width:75%"></span></div></div></div>
+              <div class="switch-panel plan-panel mt-3" data-switch-panel="a" hidden><p>Renews every 12 months</p><div class="plan-meter"><div class="label"><span>Savings</span><span>Highest</span></div><div class="track"><span style="width:100%"></span></div></div></div>
+            </div>
+          </li>
+          <li class="step" data-title="Make a payment">
+            <h3>Make a payment</h3>
+            <p>Your payment includes the initial assessment fee and the membership fee.</p>
+          </li>
+          <li class="step" data-title="Submit and wait to hear from your prescriber">
+            <h3>Submit and wait to hear from your prescriber</h3>
+            <span class="time">3 to 5 business days</span>
+            <ul>
+              <li>Once your payment is processed, your assessment, refill requests and supporting documents go to your prescriber.</li>
+              <li>If they have questions or need more documents, you&rsquo;ll get a notification.</li>
+              <li>Once everything is resolved, your prescription is sent to your preferred pharmacy.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="band-head">
+      <h2>Already a member?</h2>
+    </div>
+    <ul class="nav tabs-line" role="tablist">
+      <li class="nav-item" role="presentation"><button class="nav-link active" id="tab-refill" data-bs-toggle="tab" data-bs-target="#pane-refill" type="button" role="tab" aria-controls="pane-refill" aria-selected="true">Request a refill</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="tab-new" data-bs-toggle="tab" data-bs-target="#pane-new" type="button" role="tab" aria-controls="pane-new" aria-selected="false">Add a new medication</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="tab-refund" data-bs-toggle="tab" data-bs-target="#pane-refund" type="button" role="tab" aria-controls="pane-refund" aria-selected="false">Refunds</button></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane show active" id="pane-refill" role="tabpanel" aria-labelledby="tab-refill" tabindex="0">
+        <ul class="plain-list">
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>Log in to your account and click the button to request refills.</span></li>
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>If your medication hasn&rsquo;t changed since we last prescribed it, the refill is sent to your pharmacy as soon as your membership fee is processed.</span></li>
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>If you&rsquo;re requesting a change to a medication we prescribed, you&rsquo;ll upload documents showing you&rsquo;ve been stable on the new dose, frequency or formulary for at least 3 months.</span></li>
+        </ul>
+      </div>
+      <div class="tab-pane" id="pane-new" role="tabpanel" aria-labelledby="tab-new" tabindex="0">
+        <ul class="plain-list">
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>If a prescriber outside Baseline Health has started you on a new medication that we also offer, add it to your profile.</span></li>
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>Upload documents showing you&rsquo;ve been stable on it for at least 3 months, and pay a new medication review fee.</span></li>
+          <li><i class="bi bi-check-lg" aria-hidden="true"></i><span>Once the request is processed, the medication is sent to your preferred pharmacy within 3 to 5 business days.</span></li>
+        </ul>
+      </div>
+      <div class="tab-pane" id="pane-refund" role="tabpanel" aria-labelledby="tab-refund" tabindex="0">
+        <p class="measure">The initial assessment fee and the new medication review fee are non-refundable, because they pay the prescriber for the time spent reviewing your information.</p>
+        <p class="measure mb-0">If the prescriber can&rsquo;t approve your initial medication request for any reason, your membership fee is refunded.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<bh-cta />
