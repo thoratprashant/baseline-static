@@ -90,3 +90,9 @@ npm run build
 ```
 
 Deploy the generated files from `dist/baseline-health/browser/` to a static web host. Configure the host to serve `index.html` as the fallback for application routes so that direct visits to paths such as `/about` work correctly.
+
+## Automatic deployment
+
+Every push to the `main` branch triggers the GitHub Actions workflow in `.github/workflows/deploy-pages.yml`. The workflow installs dependencies, creates a production build, and deploys it to GitHub Pages.
+
+Live site: <https://thoratprashant.github.io/baseline-static/>
